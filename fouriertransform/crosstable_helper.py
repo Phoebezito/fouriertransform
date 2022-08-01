@@ -525,7 +525,7 @@ def _calc_pct(ct, cols, weights):
 
 		#extract compounds within class/category
 		ind = np.where(weights == n)[0]
-		cforms = df.ix[ind]
+		cforms = df.loc[ind]
 
 		#calculate class/category formula numbers and intensities
 		c_N = np.sum(cforms > 0)
